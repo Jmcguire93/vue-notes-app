@@ -1,7 +1,8 @@
 <template>
   <div id="app">
     <Toolbar />
-    <div class="note-container">
+    <NoteContainer />
+    <!-- <div class="note-container">
       <div class="note-selectors">
         <div class="note-selector active">
           <p class="note-selector-title">First note...</p>
@@ -25,17 +26,19 @@
 	        </textarea
         >
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 
 <script>
 import Toolbar from "./components/Toolbar.vue";
+import NoteContainer from "./components/NoteContainer.vue";
 
 export default {
   name: "app",
   components: {
     Toolbar,
+    NoteContainer,
   },
 };
 </script>
