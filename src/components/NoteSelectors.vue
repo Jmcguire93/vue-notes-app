@@ -1,6 +1,6 @@
 <template>
   <div class="note-selectors">
-    <NoteSelector v-for="note in notes" :key="note.id" />
+    <NoteSelector v-for="note in notes" v-bind:note="note" :key="note.id" />
     <!-- <NoteSelector />
     <NoteSelector /> -->
   </div>
@@ -19,6 +19,7 @@ export default {
         { id: 1, body: "this is my first note", timestamp: Date.now() },
         { id: 2, body: "this is my second note", timestamp: Date.now() },
         { id: 3, body: "this is my third note", timestamp: Date.now() },
+        { id: 4, body: "this is my fourth note", timestamp: Date.now() },
       ],
     };
   },
